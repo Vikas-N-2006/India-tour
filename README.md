@@ -19,7 +19,7 @@ This website provides a comprehensive guide for travelers interested in explorin
 <h2>Installation</h2>
 <ol>
 <li><h3>Clone the repository:</h3></li>
-<b>git clone "https://github.com/your-username/india-tourism-website.git"</b>
+<b>git clone "https://github.com/your-username/india-tourism-website.git"</b><br>
 <b>cd india-tourism-website</b>
 <li><h3>Install dependencies:</h3></li>
 <b>npm install</b>
