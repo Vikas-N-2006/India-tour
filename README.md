@@ -29,7 +29,7 @@ This website provides a comprehensive guide for travelers interested in explorin
 </ol>
 <h2>Future Enhancements</h2>
 <ul>  
-<li><b>Backend Integration:</b> Use a backend like Node.js or Firebase for user-generated content and real-time updates.</li><br>
-<li><b>User Accounts:</b>Allow users to create accounts, save favorite destinations, and share reviews.</li><br>
-<li><b>Booking Services:</b>Integrate with booking APIs for hotels, tours, and activities</li><br>
+<li><b>Backend Integration:</b> Use a backend like Node.js or Firebase for user-generated content and real-time updates.</li>
+<li><b>User Accounts:</b>Allow users to create accounts, save favorite destinations, and share reviews.</li>
+<li><b>Booking Services:</b>Integrate with booking APIs for hotels, tours, and activities</li>
 </ul>
