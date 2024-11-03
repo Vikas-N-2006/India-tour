@@ -1,0 +1,21 @@
+/* styles.css */
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.underline-hover::after {
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px; /* Adjust thickness here */
+    background-color: orange; /* Adjust color here */
+    transition: width 0.3s ease; /*Adjust speed here*/
+}
+
+.underline-hover:hover::after {
+    width: 100%;
+}
