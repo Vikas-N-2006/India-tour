@@ -12,10 +12,11 @@
     bottom: 0;
     width: 0;
     height: 3px; /* Adjust thickness here */
-    background-color: orange; /* Adjust color here */
+    background-color: lime; /* Adjust color here */
     transition: width 0.3s ease; /*Adjust speed here*/
 }
 
 .underline-hover:hover::after {
     width: 100%;
 }
+
