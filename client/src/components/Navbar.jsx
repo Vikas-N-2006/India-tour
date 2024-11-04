@@ -4,8 +4,8 @@ import "./navbar.css"; // Keep this if you're using the .underline-hover CSS cla
 
 const Navbar = () => {
   return (
-    <header className="w-full p-4 bg-transparent sticky top-0 left-0 z-20">
-      <div className="container mx-auto flex justify-between items-center px-6">
+    <header className="w-screen p-4 fixed  bg-transparent top-0 left-0 z-20">
+      <div className="container flex justify-between items-center px-6">
         <div className="logo-brand flex items-center">
           <NavLink to="/" className="flex">
             <h1 className="text-3xl font-bold text-orange-400">India</h1>
@@ -20,11 +20,6 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="underline-hover" to="/about">
-                About
-              </NavLink>
-            </li>
-            <li>
               <NavLink className="underline-hover" to="/explore">
                 Explore
               </NavLink>
@@ -32,6 +27,11 @@ const Navbar = () => {
             <li>
               <NavLink className="underline-hover" to="/cuisine">
                 Cuisine
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="underline-hover" to="/about">
+                About
               </NavLink>
             </li>
             <li>
