@@ -29,13 +29,13 @@
     }
   }
   
-  .cardcontainer,.heading {
+  .cardcontainer,.heading,.btn>button,.cardcontainer2{
     opacity: 0;
     transform: translateX(-100px); 
     transition: 0.5s ease-in, transform 0.5s ease-in;
   }
   
-  .cardcontainer.animate,.heading {
+  .cardcontainer.animate,.heading,.btn>button,.cardcontainer2.animate{
     animation-name: appear;
     animation-fill-mode: forwards; 
     animation-duration: 2s;

@@ -34,11 +34,6 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink className="underline-hover" to="/contact">
-                Contact
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </div>
