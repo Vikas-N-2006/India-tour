@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css'; // Import if you have additional custom styles
-
+ // Import if you have additional custom styles
+import Navbar from '../components/Navbar';
 function App() {
   return (
     <div className="relative">
+      <Navbar/>
       {/* Main Content with Background Image */}
       <div
         className="relative h-[80vh] w-full bg-cover bg-center flex items-center justify-center"

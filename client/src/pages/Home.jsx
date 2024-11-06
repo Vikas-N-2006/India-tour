@@ -15,7 +15,7 @@ import Footer from "../components/Footer";
 const Home = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
-  const sectionRef2=useRef(null);
+  const sectionRef2 = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -69,12 +69,13 @@ const Home = () => {
         </div>
         <div className="places mt-2 relative">
           <div className="absolute w-screen h-full brightness-50 bg-gradient-to-r from-blue-500 to-white"></div>
-          <div className="w-screen text-white p-14 bg-black text-center overflow-y-hidden font-serif">
+          <div className="w-screen text-white p-14 text-center overflow-y-hidden font-serif relative z-10">
             <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-black">
               <span className="">Places </span>
               <span>To</span>
               <span className=""> Visit</span>
             </span>
+
             <div
               ref={sectionRef}
               className={`cardcontainer mt-20 ${
@@ -153,8 +154,8 @@ const Home = () => {
           </div>
         </div>
         <div className="places mt-2 relative">
-        <div className="absolute w-screen h-full brightness-50 bg-gradient-to-r from-blue-500 to-white"></div>
-          <div className="w-screen text-white p-14 bg-black text-center overflow-y-hidden font-serif">
+          <div className="absolute w-screen h-full brightness-50 bg-gradient-to-r from-blue-500 to-white"></div>
+          <div className="w-screen text-white p-14 text-center overflow-y-hidden font-serif relative z-10">
             <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-black">
               <span className="">Cuisine's</span>
               <span> To</span>
@@ -226,18 +227,39 @@ const Home = () => {
               </div>
             </div>
             <div className="btn mt-12 align-middle w-full h-full flex justify-center items-center">
-              <button className="text-black bg-blue-900 z-20 border border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500" 
-              onClick={() => navigate("/cuisine")}>
+              <button
+                className="text-black bg-blue-900 z-20 border border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500"
+                onClick={() => navigate("/cuisine")}
+              >
                 Explore
               </button>
             </div>
           </div>
         </div>
         <div className="relative mt-2 mb-2 p-8 bg-black  w-full h-full text-center  brightness-50 bg-gradient-to-r from-blue-500 to-white text-black font-serif ">
-          <p className="text-3xl underline underline-offset-8 decoration-blue-500">About</p>
-          <div className="info mt-8 text-lg"> 
-          <p>India, a land of incredible diversity, is renowned for its rich culture, ancient history, and breathtaking landscapes. Known as one of the world’s oldest civilizations, India offers a unique blend of traditions, religions, arts, and cuisine that reflect its vibrant heritage. Each state in India has its own cultural identity, with distinct languages, festivals, attire, and art forms that together create a colorful mosaic of traditions and customs.</p><br />
-          <p>Indian culture is deeply rooted in spirituality, with Hinduism, Buddhism, Jainism, and Sikhism originating here. The country is also home to significant Muslim, Christian, Jewish, and Parsi communities, making it a rich tapestry of religions. Festivals like Diwali, Holi, Eid, and Christmas are celebrated with equal enthusiasm, showcasing the nation’s unity in diversity.</p>
+          <p className="text-3xl underline underline-offset-8 decoration-blue-500">
+            About
+          </p>
+          <div className="info mt-8 text-lg">
+            <p>
+              India, a land of incredible diversity, is renowned for its rich
+              culture, ancient history, and breathtaking landscapes. Known as
+              one of the world’s oldest civilizations, India offers a unique
+              blend of traditions, religions, arts, and cuisine that reflect its
+              vibrant heritage. Each state in India has its own cultural
+              identity, with distinct languages, festivals, attire, and art
+              forms that together create a colorful mosaic of traditions and
+              customs.
+            </p>
+            <br />
+            <p>
+              Indian culture is deeply rooted in spirituality, with Hinduism,
+              Buddhism, Jainism, and Sikhism originating here. The country is
+              also home to significant Muslim, Christian, Jewish, and Parsi
+              communities, making it a rich tapestry of religions. Festivals
+              like Diwali, Holi, Eid, and Christmas are celebrated with equal
+              enthusiasm, showcasing the nation’s unity in diversity.
+            </p>
           </div>
         </div>
       </div>
