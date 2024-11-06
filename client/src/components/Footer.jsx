@@ -5,10 +5,10 @@ import { FaInstagramSquare } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className="foot flex flex-col w-full h-20 bg-gray-600 justify-center items-center">
+      <div className="foot flex flex-col w-full h-20 bg-gray-600 justify-center items-center relative bottom-0">
         <div>
           <span className="text-center text-lg font-medium">
-            India Tours | &copy 2024 All rights reserved
+            India Tours | &copy; 2024 All Rights Reserved
           </span>
         </div>
         <div className="icons flex space-x-4 text-black">

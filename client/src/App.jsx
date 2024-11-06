@@ -1,17 +1,22 @@
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Cuisine from "./pages/cuisines.jsx";
+import {BrowserRouter, Routes,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Explore from './pages/Explore';
+
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path='/' element={<Home />} /> */}
-          <Route path='/' element={<Cuisine />} />
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/explore" element={<Explore/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }

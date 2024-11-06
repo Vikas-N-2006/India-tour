@@ -19,10 +19,10 @@
 
 @keyframes appear {
   from {
+  .cardcontainer,.heading,.btn>button,.cardcontainer2{
     opacity: 0;
     transform: translateX(-100px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0px);
@@ -45,3 +45,14 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+  
+  .cardcontainer.animate,.heading,.btn>button,.cardcontainer2.animate{
+    animation-name: appear;
+    animation-fill-mode: forwards; 
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    opacity: 1; 
+    transform: translateX(0);
+  }
+
