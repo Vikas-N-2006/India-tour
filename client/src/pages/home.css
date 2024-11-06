@@ -1,39 +1,51 @@
 /* styles.css */
-#root{
+#root {
   background-color: black;
 }
 @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
   }
-  
-  .fade-in-up {
-    animation: fadeInUp 1s ease-in forwards;
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
-  
-  @keyframes appear {
-    from {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-  
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-in forwards;
+}
+
+@keyframes appear {
+  from {
   .cardcontainer,.heading,.btn>button,.cardcontainer2{
     opacity: 0;
-    transform: translateX(-100px); 
-    transition: 0.5s ease-in, transform 0.5s ease-in;
+    transform: translateX(-100px);
   }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.cardcontainer,
+.heading {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.cardcontainer.animate,
+.heading {
+  animation-name: appear;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  opacity: 1;
+  transform: translateX(0);
+}
+
   
   .cardcontainer.animate,.heading,.btn>button,.cardcontainer2.animate{
     animation-name: appear;
@@ -43,3 +55,4 @@
     opacity: 1; 
     transform: translateX(0);
   }
+
