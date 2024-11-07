@@ -35,7 +35,7 @@ const Infocard = (props) => {
       ref={sectionRef}
       className={`cardcontainer mt-20 ${
         hasAnimated ? "animate" : ""
-      } flex space-x-16 justify-center items-center`}
+      } flex flex-row-reverse space-x-16 justify-center items-center`}
     >
       <div className="dish1 w-full">
         <img src={props.image} alt="" className="w-72 h-72 rounded-full" />

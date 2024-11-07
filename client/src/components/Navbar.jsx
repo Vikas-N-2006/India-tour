@@ -25,12 +25,12 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="underline-hover" to="/cuisine">
+              <NavLink className="underline-hover" to="/cuisines">
                 Cuisine
               </NavLink>
             </li>
             <li>
-              <NavLink className="underline-hover" to="/about">
+              <NavLink className="underline-hover" to="/">
                 About
               </NavLink>
             </li>
