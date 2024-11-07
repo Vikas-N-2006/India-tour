@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
+import Navbar from '../../components/Navbar';
+import img from '../../assets/Bhimbetka.jpg';
 const Bhimbetka = () => {
-    const sectionsRef = useRef([]); // Array of refs for each section
-
+    const sectionsRef = useRef([]); 
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -13,10 +14,10 @@ const Bhimbetka = () => {
     };
 
     const observer = new IntersectionObserver(handleScrollAnimation, {
-      threshold: 0.1, // Trigger animation when 10% of the section is visible
+      threshold: 0.1, 
     });
 
-    // Observing each section for the scroll animation
+    
     sectionsRef.current.forEach(section => observer.observe(section));
 
     return () => observer.disconnect();
@@ -25,11 +26,11 @@ const Bhimbetka = () => {
   return (
     <div>
       <div className="font-sans text-gray-800">
-      {/* Hero Section */}
+      <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url('./temples2.jpeg')", // Add an image of Bhimbetka in the public folder
+          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">

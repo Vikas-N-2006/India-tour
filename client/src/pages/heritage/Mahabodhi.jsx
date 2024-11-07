@@ -1,6 +1,7 @@
 // App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
+import Navbar from '../../components/Navbar';
 const  Mahabodhi = () => {
     const sectionsRef = useRef([]);// Array of refs for each section
  
@@ -26,6 +27,7 @@ const  Mahabodhi = () => {
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section */}
+      <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{

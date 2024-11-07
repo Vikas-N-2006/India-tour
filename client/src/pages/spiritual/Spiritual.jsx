@@ -1,10 +1,10 @@
 import { React, useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import img from "../assets/bg.jpg"
+import Navbar from "../../components/Navbar"
+import img from "../../assets/istockphoto-1044399860-612x612.jpg"
 import { NavLink } from "react-router-dom";
 
-const Cuisines = () => {
+const Spiritual = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef(null);
   const sectionRef2 = useRef(null);
@@ -53,26 +53,29 @@ const Cuisines = () => {
           </div>
           <div className="relative z-10 text-center">
             <p className="text-7xl text-white font-serif fade-in-up">
-              A Tapestry of Tastes:
+             India: A Sacred Land of Faith,
               <br />
-              Explore India's Iconic Flavors
+              Meditation, and Harmony
             </p>
           </div>
         </div>
       </div>
       <div className="places relative">
         <nav className="flex justify-around bg-yellow-100 py-4 w-full absolute ">
-          <NavLink to="/cuisine/north" className="text-lg font-bold hover:text-red-700">
-            North Indian
+          <NavLink to="/explore/spiritual/rammandir" className="text-lg font-bold hover:text-red-700">
+            Ram Mandir
           </NavLink>
-          <NavLink to="/cuisine/south" className="text-lg font-bold hover:text-red-700">
-            South Indian
+          <NavLink to="/explore/spiritual/goldentemple" className="text-lg font-bold hover:text-red-700">
+           Golden Temple
           </NavLink>
-          <NavLink to="/cuisine/east" className="text-lg font-bold hover:text-red-700">
-            East Indian
+          <NavLink to="/explore/spiritual/rishikesh" className="text-lg font-bold hover:text-red-700">
+            Rishikesh
           </NavLink>
-          <NavLink to="/cuisine/west" className="text-lg font-bold hover:text-red-700">
-            West Indian
+          <NavLink to="/explore/spiritual/varanasi" className="text-lg font-bold hover:text-red-700">
+            Varanasi
+          </NavLink>
+          <NavLink to="/explore/spiritual/meenakshi" className="text-lg font-bold hover:text-red-700">
+           Meenakshi Temple
           </NavLink>
         </nav>
       </div>
@@ -80,4 +83,4 @@ const Cuisines = () => {
   );
 };
 
-export default Cuisines;
+export default Spiritual;

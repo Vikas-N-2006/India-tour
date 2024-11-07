@@ -1,6 +1,8 @@
 // App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
+import Navbar from '../../components/Navbar';
+import img from '../../assets/ram.webp';
 const Rammandir = () => {
     const sectionsRef = useRef([]); // Array of refs for each section
   
@@ -26,10 +28,11 @@ const Rammandir = () => {
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section */}
+      <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: "url('./ram.webp')", // Add an image of Ram Mandir in the public folder
+          backgroundImage:  `url('${img}')`, // Add an image of Ram Mandir in the public folder
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
