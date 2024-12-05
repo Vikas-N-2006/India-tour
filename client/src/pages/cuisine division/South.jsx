@@ -9,6 +9,7 @@ import img4 from "../../assets/andhra.jpg";
 import img5 from '../../assets/Telangana.jpg'
 import Infocard from "../../components/Infocard";
 import Infocard2 from "../../components/Infocard2";
+import Footer from "../../components/Footer"
 
 const South = () => {
   return (
@@ -62,11 +63,12 @@ const South = () => {
           <Infocard
             name="Telangana"
             image={img5}
-            dish="Hyderbadi Biryani"
+            dish="Hyderabadi Biryani"
             info="Thanks to the major influence of Nizams in the state, Hyderabadi Biryani has come to be known worldwide as one of India’s jeweled food items. It is of two types; Kachchi gosht ki biryani and Pakki biryani. Marinated meat is cooked in layers of rice in a big handi which is covered with flat dough that eventually rises due to heat; indicating that the biryani is ready to be devoured."
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

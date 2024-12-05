@@ -9,6 +9,7 @@ import img4 from "../../assets/Punjab.jpg";
 import img5 from '../../assets/Kashmir.jpg'
 import Infocard from "../../components/Infocard";
 import Infocard2 from "../../components/Infocard2";
+import Footer from "../../components/Footer"
 
 const North = () => {
   return (
@@ -68,6 +69,7 @@ const North = () => {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

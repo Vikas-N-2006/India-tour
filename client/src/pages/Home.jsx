@@ -140,6 +140,7 @@ const Home = () => {
                   <p className="text-2xl w-96 text-white">
                     India's adventurous spots promise thrilling experiences,
                     from mountain treks to river rafting, paragliding, and more.
+                    Trekking trails await in Himalayas.
                   </p>
                 </div>
               </div>
@@ -241,8 +242,8 @@ const Home = () => {
           </div>
         </div>
         <div className="relative mt-2 mb-2 p-8 bg-black  w-full h-full text-center bg-black text-white font-serif ">
-          <p className="text-3xl text-emerald-400 underline underline-offset-8 decoration-white">
-            About
+          <p id="about" className="text-3xl text-emerald-400 underline underline-offset-8 decoration-white">
+           About
           </p>
           <div className="info mt-8 text-lg">
             <p>

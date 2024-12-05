@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar"
 import img from "../../assets/26.KhajurahoTemples_credit-RNMitraiStock-httpwww.istockphoto.comgbphotokandariya-mahadeva-temple-khajuraho-india-unesco-world-heritage-site-gm540115304-96377381-1024x6.jpg"
 import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer"
 
 const Heritage = () => {
   const [hasAnimated, setHasAnimated] = useState(false);

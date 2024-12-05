@@ -9,6 +9,7 @@ import img4 from "../../assets/goa.jpeg";
 import img5 from '../../assets/Madhyapradesh.webp'
 import Infocard from "../../components/Infocard";
 import Infocard2 from "../../components/Infocard2";
+import Footer from "../../components/Footer"
 
 const West = () => {
   return (
@@ -68,6 +69,7 @@ const West = () => {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

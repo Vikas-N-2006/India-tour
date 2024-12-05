@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
 import img from '../../assets/Bhimbetka.jpg';
+import Footer from "../../components/Footer"
 const Bhimbetka = () => {
     const sectionsRef = useRef([]); 
   useEffect(() => {
@@ -119,14 +120,7 @@ const Bhimbetka = () => {
 
       {/* Footer */}
       <br />
-      <footer className="bg-yellow-600 text-white py-6 text-center">
-        <p>&copy; India Tourism</p>
-        <div className="flex justify-center gap-4 mt-2">
-          <a href="#facebook" className="hover:text-yellow-200">Facebook</a>
-          <a href="#instagram" className="hover:text-yellow-200">Instagram</a>
-          <a href="#twitter" className="hover:text-yellow-200">Twitter</a>
-        </div>
-      </footer>
+      <Footer/>
     </div>
     </div>
   )

@@ -9,6 +9,7 @@ import img4 from "../../assets/Manipur.webp";
 import img5 from '../../assets/meghalaya.jpg'
 import Infocard from "../../components/Infocard";
 import Infocard2 from "../../components/Infocard2";
+import Footer from "../../components/Footer"
 
 const East = () => {
   return (
@@ -68,6 +69,7 @@ const East = () => {
           />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
