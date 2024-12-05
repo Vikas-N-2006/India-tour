@@ -1,7 +1,7 @@
 import React from 'react';
  // Import if you have additional custom styles
 import Navbar from '../components/Navbar';
-import img from '../assets/istockphoto-1044399860-612x612.jpg'
+import img from '../assets/jagannath.jpg'
 import { NavLink } from 'react-router-dom';
 function App() {
   return (
@@ -19,10 +19,10 @@ function App() {
 
       {/* Footer Navigation */}
       <nav className="flex justify-around bg-yellow-100 py-4 mb-0">
-        <NavLink to="" className="text-lg font-bold hover:text-red-700">WILDLIFE</NavLink>
+        {/* <NavLink to="" className="text-lg font-bold hover:text-red-700">WILDLIFE</NavLink> */}
         <NavLink to="/explore/heritage" className="text-lg font-bold hover:text-red-700">HERITAGE</NavLink>
         <NavLink to="/explore/spiritual" className="text-lg font-bold hover:text-red-700">SPIRITUALITY</NavLink>
-        <NavLink to="" className="text-lg font-bold hover:text-red-700">NATURE</NavLink>
+        {/* <NavLink to="" className="text-lg font-bold hover:text-red-700">NATURE</NavLink> */}
       </nav>
     </div>
   );

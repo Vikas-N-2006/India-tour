@@ -2,9 +2,10 @@
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
-import img from '../../assets/taj.jpeg'
+import img from '../../assets/taj.jpeg';
+import Footer from "../../components/Footer"
 const Taj= () => {
-    const sectionsRef = useRef([]); // Array of refs for each section
+    const sectionsRef = useRef([]); 
 
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
@@ -16,10 +17,10 @@ const Taj= () => {
     };
 
     const observer = new IntersectionObserver(handleScrollAnimation, {
-      threshold: 0.1, // Trigger animation when 10% of the section is visible
+      threshold: 0.1, 
     });
 
-    // Observing each section for the scroll animation
+    
     sectionsRef.current.forEach(section => observer.observe(section));
 
     return () => observer.disconnect();
@@ -32,7 +33,7 @@ const Taj= () => {
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white brightness-50"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of the Taj Mahal in the public folder
+          backgroundImage: `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
@@ -121,14 +122,7 @@ const Taj= () => {
 
       {/* Footer */}
       <br />
-      <footer className="bg-yellow-600 text-white py-6 text-center">
-        <p>&copy; India Tourism</p>
-        <div className="flex justify-center gap-4 mt-2">
-          <a href="#facebook" className="hover:text-yellow-200">Facebook</a>
-          <a href="#instagram" className="hover:text-yellow-200">Instagram</a>
-          <a href="#twitter" className="hover:text-yellow-200">Twitter</a>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

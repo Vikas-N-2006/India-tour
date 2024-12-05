@@ -1,6 +1,7 @@
 // App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
+import Footer from "../../components/Footer"
 const Tawangmonastery = () => {
     const sectionsRef = useRef([]); // Array of refs for each section
   
@@ -118,14 +119,7 @@ const Tawangmonastery = () => {
 
       {/* Footer */}
       <br />
-      <footer className="bg-yellow-600 text-white py-6 text-center">
-        <p>&copy; India Tourism</p>
-        <div className="flex justify-center gap-4 mt-2">
-          <a href="#facebook" className="hover:text-yellow-200">Facebook</a>
-          <a href="#instagram" className="hover:text-yellow-200">Instagram</a>
-          <a href="#twitter" className="hover:text-yellow-200">Twitter</a>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }

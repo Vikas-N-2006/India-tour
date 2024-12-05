@@ -30,9 +30,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink className="underline-hover" to="/">
-                About
-              </NavLink>
+             <a href="#about">About</a>
             </li>
           </ul>
         </nav>
