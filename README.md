@@ -43,7 +43,7 @@ Explore the live version here: [India Tour](https://india-tour-rouge.vercel.app/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vaibhavgarg25/India-tour.git
    ```
 2. Navigate to the project directory:
    ```bash
