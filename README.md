@@ -20,11 +20,6 @@ Welcome to the **India Tour** website! This dynamic platform helps users explore
 - Dynamic content delivery for a seamless user experience.
 - Built using **React** and styled with **Tailwind CSS** for modern aesthetics.
 
-### 4. **Responsive Design**
-- Optimized for both desktop and mobile devices.
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: React
@@ -93,5 +88,3 @@ We welcome contributions to make the website even better! Here's how you can hel
 4. Push to your fork and submit a pull request.
 
 ---
-
-Thank you for exploring **India Tour**! We hope this website helps you plan your journey and uncover the wonders of India. 🌏
