@@ -1,10 +1,12 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
+import img from '../../assets/goldentemple.jpg'
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
+const Goldentemple = () => {
     const sectionsRef = useRef([]); 
+  
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -18,26 +20,26 @@ const Bhimbetka = () => {
       threshold: 0.1, 
     });
 
-    
+
     sectionsRef.current.forEach(section => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage: `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Golden Temple, Amritsar</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            A stunning Sikh Gurudwara, known for its golden beauty and spiritual significance.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            The Golden Temple, also known as Harmandir Sahib, is a sacred place of worship for Sikhs. It is located in Amritsar, Punjab, and is renowned for its stunning golden architecture and peaceful ambiance.
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            The Golden Temple was originally built in the 16th century by Guru Arjan, the fifth Sikh Guru. The temple has a rich history and has undergone several renovations, most notably in the 19th century when Maharaja Ranjit Singh covered the upper floors with gold, giving it its iconic appearance.
           </p>
         </div>
       </section>
@@ -91,12 +93,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable attractions near the Golden Temple include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Akal Takht: One of the five seats of authority in Sikhism, located within the Golden Temple complex.</li>
+            <li>Jallianwala Bagh: A historic public garden that commemorates the massacre of 1919.</li>
+            <li>Durgiana Temple: A Hindu temple with architecture similar to the Golden Temple, dedicated to Goddess Durga.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +113,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Sri Guru Ram Dass Jee International Airport in Amritsar, about 13 km away.</li>
+            <li>Nearest Railway Station: Amritsar Junction, well-connected to major cities across India.</li>
+            <li>By Road: Amritsar is accessible by road from nearby cities, with buses and taxis available.</li>
           </ul>
         </div>
       </section>
@@ -122,8 +124,7 @@ const Bhimbetka = () => {
       <br />
       <Footer/>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default Goldentemple;

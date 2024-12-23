@@ -1,10 +1,12 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
+import img from '../../assets/bodhgaya.jpg';
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
-    const sectionsRef = useRef([]); 
+const  Mahabodhi = () => {
+    const sectionsRef = useRef([]);
+ 
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -25,19 +27,19 @@ const Bhimbetka = () => {
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage: `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Mahabodhi Temple Complex</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            A UNESCO World Heritage Site, the Mahabodhi Temple Complex is the site where Buddha attained enlightenment, attracting visitors and pilgrims from around the world.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            The Mahabodhi Temple Complex, located in Bodh Gaya, India, marks the site where Siddhartha Gautama, the Buddha, is believed to have attained enlightenment under the Bodhi Tree. This sacred complex is a key pilgrimage destination for Buddhists worldwide, featuring the revered temple and a descendant of the original Bodhi Tree.
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            The Mahabodhi Temple was originally built by Emperor Ashoka in the 3rd century BCE, though it has been rebuilt and expanded over centuries. The current structure dates from the 5th–6th centuries CE and showcases architectural influences from early Indian design. The site includes the Bodhi Tree, where Buddha meditated and reached enlightenment, making it one of Buddhism's holiest sites.
           </p>
         </div>
       </section>
@@ -91,12 +93,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable features near the Mahabodhi Temple Complex include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Animesh Lochana Chaitya: A small shrine where the Buddha is believed to have gazed at the Bodhi Tree after enlightenment.</li>
+            <li>Sujata Stupa: Located in the village of Sujata, this stupa honors the milkmaid Sujata, who offered Buddha his last meal before enlightenment.</li>
+            <li>Great Buddha Statue: A 25-meter-tall statue of Buddha in meditation posture, inaugurated by the Dalai Lama, and a landmark of Bodh Gaya.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +113,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Gaya Airport, about 12 km from Bodh Gaya, has flights from Kolkata, Delhi, and other major cities.</li>
+            <li>Nearest Railway Station: Gaya Junction, 16 km away, connects to major cities like Delhi, Kolkata, and Patna.</li>
+            <li>By Road: Regular buses and taxis are available from Gaya, Patna, and other nearby cities, making Bodh Gaya easily accessible.</li>
           </ul>
         </div>
       </section>
@@ -122,8 +124,7 @@ const Bhimbetka = () => {
       <br />
       <Footer/>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default  Mahabodhi;

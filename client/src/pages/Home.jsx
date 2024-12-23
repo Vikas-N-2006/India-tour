@@ -17,7 +17,7 @@ const Home = () => {
   const sectionRef = useRef(null);
   const sectionRef2 = useRef(null);
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -47,7 +47,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="overflow-x-hidden ">
+      <div className="overflow-x-hidden bg-white">
         <div className="relative w-screen h-screen flex justify-center items-center">
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="navi absolute">
@@ -68,9 +68,9 @@ const Home = () => {
           </div>
         </div>
         <div className="places mt-2 relative">
-          <div className="absolute w-screen h-full brightness-50 bg-gradient-to-r from-blue-500 to-white"></div>
-          <div className="w-screen text-white p-14 text-center overflow-y-hidden font-serif relative z-10">
-            <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-black">
+          <div className="absolute w-screen h-full bg-black"></div>
+          <div className="w-screen text-emerald-500 p-14 text-center overflow-y-hidden font-serif relative z-10">
+            <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-white">
               <span className="">Places </span>
               <span>To</span>
               <span className=""> Visit</span>
@@ -85,18 +85,18 @@ const Home = () => {
               <div className="flex flex-col text-left">
                 <div className="c1 group  relative flex justify-center items-center">
                   <div className="absolute z-20">
-                    <p className="text-3xl text-transparent group-hover:text-white   transition ease-in">
+                    <p className="text-3xl text-transparent group-hover:text-white transition ease-in">
                       Religious
                     </p>
                   </div>
                   <Card
                     src={img4}
                     effect="transition ease-in hover:scale-105 hover:brightness-50"
-                    link="/explore"
+                    link="/explore/spiritual"
                   />
                 </div>
                 <div className="info text-center mt-8">
-                  <p className="text-lg w-96 text-black">
+                  <p className="text-2xl w-96 text-white">
                     India's religious sites blend spirituality and heritage,
                     showcasing diverse faiths and awe-inspiring architecture
                     across centuries.
@@ -113,10 +113,11 @@ const Home = () => {
                   <Card
                     src={img5}
                     effect="transition ease-in hover:scale-105 hover:brightness-50"
+                    link="/explore/heritage"
                   />
                 </div>
                 <div className="info text-center mt-6">
-                  <p className="text-lg w-96 text-black">
+                  <p className="text-2xl w-96 text-white">
                     India's historical sites reveal centuries of rich heritage,
                     showcasing grand architecture, ancient culture, and timeless
                     stories.
@@ -136,16 +137,17 @@ const Home = () => {
                   />
                 </div>
                 <div className="info text-center mt-6">
-                  <p className="text-lg w-96 text-black">
+                  <p className="text-2xl w-96 text-white">
                     India's adventurous spots promise thrilling experiences,
                     from mountain treks to river rafting, paragliding, and more.
+                    Trekking trails await in Himalayas.
                   </p>
                 </div>
               </div>
             </div>
             <div className="btn mt-12 align-middle w-full h-full flex justify-center items-center">
               <button
-                className="text-black bg-blue-900 z-20 border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500"
+                className="text-black bg-emerald-500 z-20 border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500 hover:scale-105"
                 onClick={() => navigate("/explore")}
               >
                 Explore
@@ -154,9 +156,9 @@ const Home = () => {
           </div>
         </div>
         <div className="places mt-2 relative">
-          <div className="absolute w-screen h-full brightness-50 bg-gradient-to-r from-blue-500 to-white"></div>
-          <div className="w-screen text-white p-14 text-center overflow-y-hidden font-serif relative z-10">
-            <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-black">
+          <div className="absolute w-screen h-full bg-black"></div>
+          <div className="w-screen text-emerald-400 p-14 text-center overflow-y-hidden font-serif relative z-10">
+            <span className="heading text-5xl w-full mt-6 underline underline-offset-8 decoration-4 decoration-white">
               <span className="">Cuisine's</span>
               <span> To</span>
               <span className=""> Try</span>
@@ -177,10 +179,11 @@ const Home = () => {
                   <Card
                     src={img7}
                     effect="transition ease-in hover:scale-105 hover:brightness-50"
+                    link="/cuisine/north"
                   />
                 </div>
                 <div className="info text-center mt-8">
-                  <p className="text-lg w-96 text-black">
+                  <p className="text-2xl w-96 text-white">
                     North Indian cuisine offers rich, flavorful dishes, from
                     spicy curries to hearty breads and kebabs.
                   </p>
@@ -195,11 +198,12 @@ const Home = () => {
                   </div>
                   <Card
                     src={img8}
-                    effect="transition ease-in hover:scale-105 hover:brightness-50"
+                    effect="transition ease-in hover:scale-105 hover:brightness-50  "
+                    link="/cuisine/south"
                   />
                 </div>
                 <div className="info text-center mt-10">
-                  <p className="text-lg w-96 text-black">
+                  <p className="text-2xl w-96 text-white">
                     South Indian cuisine delights with vibrant flavors,
                     featuring tangy dosas, spicy sambars, and coconut-infused
                     dishes.
@@ -216,10 +220,11 @@ const Home = () => {
                   <Card
                     src={img9}
                     effect="transition ease-in hover:scale-105 hover:brightness-50"
+                    link="/cuisines"
                   />
                 </div>
                 <div className="info text-center mt-16">
-                  <p className="text-lg w-96 text-black ">
+                  <p className="text-2xl w-96 text-white">
                     East Indian cuisine boasts rich flavors with fish curries,
                     pithas, and sweets
                   </p>
@@ -228,17 +233,17 @@ const Home = () => {
             </div>
             <div className="btn mt-12 align-middle w-full h-full flex justify-center items-center">
               <button
-                className="text-black bg-blue-900 z-20 border border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500"
-                onClick={() => navigate("/cuisine")}
+                className="text-black bg-emerald-500 z-20 border-2 border-black rounded-2xl p-2 w-44 text-center text-xl hover:bg-blue-500 hover:scale-105"
+                onClick={() => navigate("/cuisines")}
               >
                 Explore
               </button>
             </div>
           </div>
         </div>
-        <div className="relative mt-2 mb-2 p-8 bg-black  w-full h-full text-center  brightness-50 bg-gradient-to-r from-blue-500 to-white text-black font-serif ">
-          <p className="text-3xl underline underline-offset-8 decoration-blue-500">
-            About
+        <div className="relative mt-2 mb-2 p-8 bg-black  w-full h-full text-center bg-black text-white font-serif ">
+          <p id="about" className="text-3xl text-emerald-400 underline underline-offset-8 decoration-white">
+           About
           </p>
           <div className="info mt-8 text-lg">
             <p>

@@ -1,10 +1,10 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
-import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
-    const sectionsRef = useRef([]); 
+const Tawangmonastery = () => {
+    const sectionsRef = useRef([]); // Array of refs for each section
+  
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -15,29 +15,28 @@ const Bhimbetka = () => {
     };
 
     const observer = new IntersectionObserver(handleScrollAnimation, {
-      threshold: 0.1, 
+      threshold: 0.1, // Trigger animation when 10% of the section is visible
     });
 
-    
+    // Observing each section for the scroll animation
     sectionsRef.current.forEach(section => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
-      <Navbar/>
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage: "url('./Tawang.jpg')", // Add an image of Tawang Monastery in the public folder
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Tawang Monastery, Arunachal Pradesh</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            The largest monastery in India, known for its serene beauty and spiritual importance in Tibetan Buddhism.
           </p>
         </div>
       </div>
@@ -61,7 +60,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            The Tawang Monastery, located in Tawang, Arunachal Pradesh, is one of the most significant Buddhist monasteries in India and the largest in the country. Perched at an altitude of 10,000 feet, it offers breathtaking views of the Tawang Valley and serves as an important cultural and spiritual hub for Tibetan Buddhism in the region.
           </p>
         </div>
       </section>
@@ -76,7 +75,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            Tawang Monastery was founded in 1680 by Merak Lama Lodre Gyatso, following the wishes of the 5th Dalai Lama. It has a fascinating history and has been a center of Buddhist learning and spirituality for centuries. The monastery is home to around 450 monks and includes a three-story prayer hall with a stunning statue of Lord Buddha.
           </p>
         </div>
       </section>
@@ -91,12 +90,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable attractions near Tawang Monastery include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Urgyelling Monastery: The birthplace of the 6th Dalai Lama, an important site for Buddhists.</li>
+            <li>Nuranang Waterfall: A scenic waterfall located near Tawang, also known as Bong Bong Waterfall.</li>
+            <li>Gorichen Peak: The highest peak in Arunachal Pradesh, offering stunning views and trekking opportunities.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +110,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Tezpur Airport in Assam, around 317 km from Tawang.</li>
+            <li>Nearest Railway Station: Tezpur Railway Station, well-connected to nearby cities in Assam.</li>
+            <li>By Road: Tawang is accessible by road, though it requires a journey through mountainous terrain. Shared taxis and buses are available from Tezpur.</li>
           </ul>
         </div>
       </section>
@@ -122,8 +121,7 @@ const Bhimbetka = () => {
       <br />
       <Footer/>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default Tawangmonastery;

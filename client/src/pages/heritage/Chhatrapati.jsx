@@ -1,10 +1,12 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
+import img from '../../assets/terminal.jpg'
 import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
-    const sectionsRef = useRef([]); 
+const Chhatrapati = () => {
+    const sectionsRef = useRef([]);
+  
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -18,26 +20,26 @@ const Bhimbetka = () => {
       threshold: 0.1, 
     });
 
-    
+   
     sectionsRef.current.forEach(section => observer.observe(section));
 
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage: `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Chhatrapati Shivaji Terminus</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            A UNESCO World Heritage Site and iconic landmark of Mumbai, known for its blend of Victorian Gothic Revival architecture and Indian influences.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            Chhatrapati Shivaji Terminus (CST), located in Mumbai, India, is an architectural marvel and one of the busiest railway stations in the country. Originally named Victoria Terminus, this iconic structure exemplifies the Victorian Gothic Revival style with unique Indian elements and has become a symbol of Mumbai's colonial history and vibrant urban life.
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            Designed by British architect Frederick William Stevens, CST was completed in 1887 to commemorate Queen Victoria's Golden Jubilee. The structure integrates elements of Italianate, Gothic, and Mughal architecture, making it a significant symbol of colonial-era engineering. Recognized as a UNESCO World Heritage Site, CST stands as a testament to the grandeur of British colonial architecture fused with Indian craftsmanship.
           </p>
         </div>
       </section>
@@ -91,12 +93,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable features around Chhatrapati Shivaji Terminus include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Gateway of India: An iconic monument built during the British era, located about 3 km from CST.</li>
+            <li>Marine Drive: Known as the "Queen’s Necklace," this scenic promenade offers stunning views of Mumbai's coastline, just a short drive away.</li>
+            <li>Elephanta Caves: A UNESCO World Heritage Site located on an island near Mumbai, accessible via ferry from the Gateway of India.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +113,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Chhatrapati Shivaji Maharaj International Airport in Mumbai, about 20 km from CST, connects Mumbai with major cities worldwide.</li>
+            <li>Nearest Railway Station: CST itself is a major railway terminal, connecting Mumbai to numerous destinations across India.</li>
+            <li>By Road: Mumbai is well-connected by road with the rest of Maharashtra and neighboring states, and taxis and buses offer convenient transit options.</li>
           </ul>
         </div>
       </section>
@@ -122,8 +124,7 @@ const Bhimbetka = () => {
       <br />
       <Footer/>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default Chhatrapati;

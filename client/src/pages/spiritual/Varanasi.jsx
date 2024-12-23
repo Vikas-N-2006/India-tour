@@ -1,10 +1,12 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
+import img from '../../assets/varansi.jpg'
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
-    const sectionsRef = useRef([]); 
+const Varanasi= () => {
+    const sectionsRef = useRef([]);
+  
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -25,19 +27,19 @@ const Bhimbetka = () => {
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage:  `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Varanasi, Uttar Pradesh</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            Known as the spiritual capital of India, Varanasi is one of the oldest continuously inhabited cities in the world.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            Varanasi, also known as Kashi or Banaras, is a major cultural and spiritual center in northern India, situated along the banks of the sacred river Ganges. It is revered as the city of Lord Shiva and attracts millions of pilgrims seeking spiritual liberation and peace.
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            Varanasi is one of the oldest cities in the world, with a history dating back thousands of years. It has been a prominent center of learning, culture, and spirituality, drawing sages, poets, and philosophers. The city’s history is deeply intertwined with Hindu mythology and is considered a gateway to spiritual enlightenment.
           </p>
         </div>
       </section>
@@ -91,12 +93,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable attractions in Varanasi include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Dashashwamedh Ghat: The main and most vibrant ghat, known for the evening Ganga Aarti ceremony.</li>
+            <li>Kashi Vishwanath Temple: A major Hindu temple dedicated to Lord Shiva, one of the twelve Jyotirlingas.</li>
+            <li>Sarnath: A Buddhist pilgrimage site where Lord Buddha delivered his first sermon after attaining enlightenment.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +113,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Lal Bahadur Shastri Airport, located around 26 km from the city center.</li>
+            <li>Nearest Railway Station: Varanasi Junction, well-connected to major cities across India.</li>
+            <li>By Road: Varanasi is accessible by road, with regular buses and taxis available from nearby cities.</li>
           </ul>
         </div>
       </section>
@@ -122,8 +124,7 @@ const Bhimbetka = () => {
       <br />
       <Footer/>
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default Varanasi;

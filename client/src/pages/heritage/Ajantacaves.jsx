@@ -1,10 +1,12 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './Bhimbetka.css'; 
 import Navbar from '../../components/Navbar';
-import img from '../../assets/Bhimbetka.jpg';
+import img from '../../assets/ajanta.jpg';
 import Footer from "../../components/Footer"
-const Bhimbetka = () => {
+const Ajantacaves = () => {
     const sectionsRef = useRef([]); 
+
   useEffect(() => {
     const handleScrollAnimation = (entries) => {
       entries.forEach(entry => {
@@ -25,19 +27,19 @@ const Bhimbetka = () => {
   }, []);
 
   return (
-    <div>
-      <div className="font-sans text-gray-800">
+    <div className="font-sans text-gray-800">
+      {/* Hero Section */}
       <Navbar/>
       <div
         className="relative h-[85vh] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage: `url('${img}')`, // Add an image of Bhimbetka in the public folder
+          backgroundImage: `url('${img}')`, 
         }}
       >
         <div className="bg-black bg-opacity-50 p-6 rounded-md text-center max-w-lg">
-          <h1 className="text-4xl font-bold mb-4">Bhimbetka Rock Shelters</h1>
+          <h1 className="text-4xl font-bold mb-4">Ajanta Caves</h1>
           <p className="text-lg">
-            A UNESCO World Heritage Site, known for its ancient rock shelters and prehistoric cave paintings.
+            A UNESCO World Heritage Site, renowned for its rock-cut Buddhist temples and paintings.
           </p>
         </div>
       </div>
@@ -61,7 +63,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters are an archaeological site in central India that spans the prehistoric Paleolithic and Mesolithic periods. These shelters contain ancient cave paintings that are estimated to be around 30,000 years old, depicting scenes of hunting, dancing, and animal figures.
+            The Ajanta Caves are a complex of around 30 rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE. They are renowned for their exquisite wall paintings and sculptures, depicting the life and teachings of Buddha and various Jataka tales.
           </p>
         </div>
       </section>
@@ -76,7 +78,7 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            The Bhimbetka rock shelters were discovered in 1957 and are considered one of the earliest evidence of human life in India. These shelters, which show continuous habitation from the Stone Age, feature artwork that reflects a primitive lifestyle and cultural activities, dating back to over 100,000 years.
+            The Ajanta Caves were built in two phases, the early Hinayana phase in the 2nd century BCE and the later Mahayana phase between the 5th and 6th centuries CE. They served as monasteries, study centers, and places of worship for Buddhist monks, with intricate frescoes illustrating the progression of Buddhist art.
           </p>
         </div>
       </section>
@@ -91,12 +93,12 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <p className="text-gray-700 leading-relaxed">
-            Notable attractions near Bhimbetka Rock Shelters include:
+            Notable attractions near Ajanta Caves include:
           </p>
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Sanchi Stupa: An ancient Buddhist complex with stupas and sculptures, a UNESCO World Heritage Site.</li>
-            <li>Raisen Fort: A historic fort atop a hill, offering scenic views of the surrounding landscape.</li>
-            <li>Bhojpur Temple: A famous temple dedicated to Lord Shiva, known for its massive unfinished Shiva Lingam.</li>
+            <li>Ellora Caves: Another UNESCO World Heritage Site with Hindu, Buddhist, and Jain rock-cut temples.</li>
+            <li>Daulatabad Fort: A historic hilltop fortress with incredible defensive features and panoramic views.</li>
+            <li>Bibi Ka Maqbara: A beautiful mausoleum reminiscent of the Taj Mahal in Aurangabad.</li>
           </ul>
         </div>
       </section>
@@ -111,9 +113,9 @@ const Bhimbetka = () => {
         <br />
         <div className="text-box">
           <ul className="list-disc pl-8 text-gray-700">
-            <li>Nearest Airport: Raja Bhoj Airport in Bhopal, approximately 45 km away, offers flights from major Indian cities.</li>
-            <li>Nearest Railway Station: Bhopal Railway Station, around 40 km away, connects to various parts of India.</li>
-            <li>By Road: Bhimbetka is accessible by road from Bhopal, with taxis and buses providing easy transportation.</li>
+            <li>Nearest Airport: Aurangabad Airport, about 100 km away, offers flights from major Indian cities.</li>
+            <li>Nearest Railway Station: Jalgaon Railway Station, around 60 km away, provides rail connections to Mumbai, Delhi, and other cities.</li>
+            <li>By Road: Buses and taxis are available from Aurangabad and Jalgaon for easy access to the caves.</li>
           </ul>
         </div>
       </section>
@@ -121,9 +123,9 @@ const Bhimbetka = () => {
       {/* Footer */}
       <br />
       <Footer/>
+
     </div>
-    </div>
-  )
+  );
 }
 
-export default Bhimbetka
+export default Ajantacaves;
